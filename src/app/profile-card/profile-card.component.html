@@ -1,0 +1,21 @@
+<p-card
+  [header]="selectedUser.name"
+  [subheader]="selectedUser.socialMediaHandle"
+  [style]="{ width: '360px' }"
+>
+  <ng-template pTemplate="header" [style]="{ width: '360px' }">
+    <img alt="Card" [src]="selectedUser.profileImgSrc" />
+  </ng-template>
+  <p>{{ selectedUser.bio }}</p>
+  <p>{{ selectedUser.location }}</p>
+  <p>
+    <a href="#" class="link-underline-primary">{{ selectedUser.website }}</a>
+  </p>
+
+  <ng-template pTemplate="footer">
+    <div class="flex gap-3 mt-1">
+      <p-button label="View CV" />
+      <p-button label="Message" />
+    </div>
+  </ng-template>
+</p-card>

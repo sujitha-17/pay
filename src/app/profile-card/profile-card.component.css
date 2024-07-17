@@ -1,0 +1,28 @@
+img {
+    margin-top: 10%;
+    border-radius: 50%;
+    width: 50%;
+  }
+  
+  :host {
+      ::ng-deep 
+      .p-card{
+          margin:auto;
+          padding:10px;
+          text-align: center;
+        
+      }    
+
+      ::ng-deep.p-card-footer{
+        text-align: -webkit-center;      
+     }   
+  
+      ::ng-deep.p-card-header{
+         background-color: steelblue;       
+      }    
+
+      ::ng-deep.p-button {
+        display: block;
+        margin: 10px;
+      }
+  }
