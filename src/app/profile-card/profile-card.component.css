@@ -1,7 +1,10 @@
 img {
-    margin-top: 10%;
-    border-radius: 50%;
-    width: 50%;
+  margin-top: 10%;
+  border-radius: 50%;
+  position: relative;
+  top: 30px;
+  width: 100px;
+  height: 100px;
   }
   
   :host {
@@ -18,11 +21,17 @@ img {
      }   
   
       ::ng-deep.p-card-header{
-         background-color: steelblue;       
+         background-color: currentColor;       
       }    
+
+      ::ng-deep.p-card-title{
+        position:relative;
+        top:23px;      
+     }  
 
       ::ng-deep.p-button {
         display: block;
         margin: 10px;
+        width: -webkit-fill-available;
       }
   }
